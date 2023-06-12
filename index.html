@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>personal portfolio</title>
+    <script src="https://kit.fontawesome.com/b93f9b7977.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class="fas fa-times" onclick="closemenu()"></i>     
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end developer</p>
+                <h1>Hi,I'm <span>Ayushi Nag </span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="niche.png" alt="photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtittle">About Me</h1>
+                    <p>Hello there, I am Ayushi Nag whose currently pursuing computer science engineering from VIT, Vellore. I am a self-driven girl who is motivated most of the time and procrastinates the other time. Apart from continuous completion of assignment, studying for my undergrad degree and building my skills I prefer travelling to local as well as popular places near by , read theories about the universe and play some random sports though might not be the best player there. I like having people around but more than that I enjoy my own company. </p>
+                    <div class="tabtitles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Educations')">Educations</p>
+                        <p class="tab-links" onclick="opentab('Interests')">Interests</p>
+                
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                        <li><span>Web-development</span><br>developing a website</li>
+                        <li><span>C++/C,java,python</span><br>coding using these languages</li>
+                        <li><span>Critical problem solving</span><br>systematic and analytical approach to effectively and efficiently resolve complex issues.</li>
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="Educations">
+                        <ul>
+                        <li><span>2021-current</span><br>Btech in cse from vit vellore<br>current cgpa:9.16</li>
+                        <li><span>2019-2021</span><br>10+2 ISC board from CMS<br>Percentage score:97.5%</li>
+        
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="Interests">
+                        <ul>
+                        <li><span>May 2023 - June 2023</span><br>Front-end intern at shoppeal</li>
+                        <li><span>November 2022– January 2023</span><br>Intern in NGO- pledge a smile</li>
+                        <li><span>May 2019-2021</span><br>School head girl</li>
+                       
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    <!-- -------service -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtittle">My services</h1>
+            <div class="serviceslist">
+                <div>
+                    <i class="fa-solid fa-display"></i>
+                    <h2>Web-development</h2>
+                    <p>I can help you to develop a working website with all required features and wants.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Problem-solving </h2>
+                    <p>I can help you code the programs in programming languages including c++,c,java and python.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database managemnet </h2>
+                    <p>I can help you to maintain and organise you database details and entities and perform analytical research.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Projects">
+        <div class="container">
+            <h1 class="subtittle">My Projects</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="p1.png">
+                    <div class="l">
+                        <h3>MediLocator</h3>
+                        <p>The aim of the project "MediLocator" is to provide a simple and efficient way for users to find the nearest hospital or blood bank to their location in times of need.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+
+                </div>
+                <div class="work">
+                    <img src="p2.png">
+                    <div class="l">
+                        <h3>Food on Route</h3>
+                        <p>Website which help the user to take their appetizers on the way through their travel process. This app will order food from the user’s favorite restaurant or cafe before they actually reach that destination which will ultimatelysafe their time in their busy and hectic life.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="p3.png">
+                    <div class="l">
+                        <h3>Student database</h3>
+                        <p>The lack of accurate information on the shortest path
+                            between hospitals and blood banks, and hospitals lead
+                            to delays in emergency medical services.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------contact----------------- -->
+    <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me </h1>
+                <p><i class="fa-regular fa-envelope"></i> aayushinag@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 8853338998</p>
+                <div class="social">
+
+                    <a href="https://www.linkedin.com/in/ayushi-nag?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BN93R5cpwQR2qkAioetH1Ig%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://ayushisharinglife.blogspot.com/"><i class="fa-brands fa-blogger"></i></a>
+                    <a href="https://instagram.com/aayy_nag?igshid=NGExMmI2YTkyZg=="><i class="fa-brands fa-instagram"></i></a>
+                 </div>
+                 <br>
+                 <a href="aayushi nag.pdf" download class="btn">Download Resume</a>
+          </div> 
+            <div class="contack-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                 <textarea name="Message"  rows="10" placeholder="Your message" required></textarea>
+                 <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+      <div class="copyright">Thank you for visiting my website<i class="fa-solid fa-heart"></i></div>
+           </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+            
+        }
+    </script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyiIeUBH4si32gvhlfhE0FKCBgSQjJpzTUYt4VhH0v1O8h_Fmkq6J-v3hTcn-o6Ye71ag/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Thank you! Message is sent successfully."
+            setTimeout(function(){
+                msg.innerHTML=""
+            },500)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+   
+   
+</body>
+</html>
